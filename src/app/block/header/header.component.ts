@@ -1,19 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
-  faBell = faBell;
-  faSearch = faSearch;
+  isMenuOpen = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onMenuOpened(): void {
+    this.isMenuOpen = true;
+  }
+
+  onMenuClosed(): void {
+    this.isMenuOpen = false;
+  }
 }

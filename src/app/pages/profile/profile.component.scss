@@ -1,4 +1,6 @@
+@import "../../../css-variables";
+
 .container {
-  width: 1320px;
-  padding: 0 60px;
+  width: $container-width;
+  padding: 0 $large-padding;
 }
