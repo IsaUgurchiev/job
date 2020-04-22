@@ -1,14 +1,30 @@
-<header>
-
-  <div class="logo">
-    <img src="../../../assets/logo.png" />
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="logo">
+        <img src="../../../assets/logo.png" />
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell--span-8">
+      <div class="search">
+        <input type="text" placeholder="Enter keyword">
+        <fa-icon [icon]="faSearch" size="lg"></fa-icon>
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="notification">
+        <fa-icon [icon]="faBell" size="lg"></fa-icon>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="search">
-    <input type="text" placeholder="Enter keyword">
-  </div>
-
-  <div class="notification">
-
-  </div>
-</header>
+</div>
