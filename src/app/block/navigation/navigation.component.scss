@@ -1,0 +1,31 @@
+@import "../../../css-variables";
+
+.toolbar {
+  background-color: transparent;
+  font-size: $font-size;
+  font-weight: 300;
+
+  .toolbar-row {
+    .item {
+      text-decoration: none;
+      color: $black;
+      width: 100%;
+      padding: 8px 20px;
+
+      &:hover {
+        background-color: $bg-color;
+        border-radius: $large-radius;
+      }
+
+      mat-icon {
+        position: relative;
+        top: 6px;
+      }
+
+      span {
+        padding-left: 8px;
+      }
+    }
+  }
+}
+

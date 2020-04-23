@@ -24,7 +24,7 @@
     border-radius: $large-radius;
     border: none;
     width: 100%;
-    padding: 10px 55px 10px 10px;
+    padding: 10px 55px 10px 25px;
     outline-style: none;
   }
 
@@ -56,13 +56,19 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   .user-info {
     font-size: 14px;
     font-family: $font-family;
     letter-spacing: 1px;
-    margin-left: 10px;
+    margin-left: 15px;
     overflow: hidden;
 
     .user-name {
