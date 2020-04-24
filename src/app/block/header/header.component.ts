@@ -8,10 +8,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isMenuOpen = false;
+  isHaveNewMessages = false;
+  isReceiveNewMessages = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.isReceiveNewMessages = true;
+      this.isHaveNewMessages = true;
+      }, 3000);
   }
 
   onMenuOpened(): void {
@@ -20,5 +26,9 @@ export class HeaderComponent implements OnInit {
 
   onMenuClosed(): void {
     this.isMenuOpen = false;
+  }
+
+  onBellMouseEnter(): void {
+    this.isReceiveNewMessages = false;
   }
 }

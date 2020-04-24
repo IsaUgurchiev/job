@@ -7,6 +7,7 @@
 .logo {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .search {
@@ -37,13 +38,81 @@
 .notification {
   display: flex;
   justify-content: flex-start;
+  position: relative;
 
   mat-icon {
     cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+      background-color: $bg-color;
+      border-radius: 50%;
+    }
+  }
+
+  mat-icon:first-child {
+    margin-left: -20px;
   }
 
   mat-icon:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 5px;
+  }
+
+  .count {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: $white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    background-color: $red;
+    border-radius: 50%;
+    border: 2px solid $white;
+
+    transition: transform 0.2s ease-out;
+    transform: scale(0);
+  }
+
+  .count.bubble {
+    transform: scale(1);
+  }
+
+  .ringing {
+    animation: ring 4s .7s ease-in-out infinite;
+  }
+
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(30deg); }
+    3% { transform: rotate(-28deg); }
+    5% { transform: rotate(34deg); }
+    7% { transform: rotate(-32deg); }
+    9% { transform: rotate(30deg); }
+    11% { transform: rotate(-28deg); }
+    13% { transform: rotate(26deg); }
+    15% { transform: rotate(-24deg); }
+    17% { transform: rotate(22deg); }
+    19% { transform: rotate(-20deg); }
+    21% { transform: rotate(18deg); }
+    23% { transform: rotate(-16deg); }
+    25% { transform: rotate(14deg); }
+    27% { transform: rotate(-12deg); }
+    29% { transform: rotate(10deg); }
+    31% { transform: rotate(-8deg); }
+    33% { transform: rotate(6deg); }
+    35% { transform: rotate(-4deg); }
+    37% { transform: rotate(2deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
   }
 }
 
@@ -54,7 +123,6 @@
 
   .user-pic {
     width: 50px;
-    height: 50px;
     border-radius: 50%;
 
     transition: transform 0.2s ease-out;
