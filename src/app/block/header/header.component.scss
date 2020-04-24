@@ -1,7 +1,9 @@
 @import "../../../css-variables";
 
-.mdc-layout-grid__inner {
-  align-items: center;
+.header {
+  .mdc-layout-grid__inner {
+    align-items: center;
+  }
 }
 
 .logo {
