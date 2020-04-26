@@ -10,11 +10,12 @@ $large-radius: 20px;
 $medium-radius: 10px;
 $small-radius: 10px;
 
-$bg-color: #f4f4f5;
+$bg-color-grey: #f4f4f5;
+$bg-color-white: #fff;
 $black: #303030;
 $white: #fff;
 $red: #e04a57;
 
 $dark-secondary-text: rgba(0,0,0,.54);
 
-$border-hover-color: darken($bg-color, 25%);
+$border-hover-color: darken($bg-color-grey, 25%);

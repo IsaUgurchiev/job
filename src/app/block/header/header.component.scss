@@ -1,6 +1,17 @@
 @import "../../../css-variables";
 
+.header-wrapper {
+  height: 122px;
+}
+
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $bg-color-grey;
+  position: fixed;
+  z-index: 999;
+  background-color: $bg-color-white;
+
   .mdc-layout-grid__inner {
     align-items: center;
   }
@@ -23,7 +34,7 @@
     font-weight: 100;
     font-style: italic;
     line-height: 40px;
-    background-color: $bg-color;
+    background-color: $bg-color-grey;
     border-radius: $large-radius;
     border: none;
     width: 100%;
@@ -143,7 +154,7 @@
   }
 
   i {
-    border: solid darken($bg-color, 50%);
+    border: solid darken($bg-color-grey, 50%);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -163,7 +174,7 @@
 
 .header-menu-overlay {
   .mat-menu-content {
-    background-color: $bg-color;
+    background-color: $bg-color-grey;
     width: 192px;
 
     button {
