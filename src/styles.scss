@@ -5,3 +5,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: $font-family; font-size: $font-size }
+
+.icon-hover {
+  padding: 10px;
+
+  &:hover {
+    background-color: $bg-color;
+    border-radius: 50%;
+  }
+}
+
+mat-icon {
+  cursor: pointer;
+}

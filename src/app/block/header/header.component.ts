@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
     setTimeout(() => {
       this.isReceiveNewMessages = true;
       this.isHaveNewMessages = true;
-      }, 3000);
+      }, 2500);
   }
 
   onMenuOpened(): void {

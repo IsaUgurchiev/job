@@ -11,12 +11,12 @@
     </div>
 
     <div class="mdc-layout-grid__cell--span-1 notification">
-      <mat-icon class="material-icons-outlined">message</mat-icon>
-      <mat-icon class="material-icons-outlined bell"
-                [ngClass]="isReceiveNewMessages ? 'ringing' : ''"
+      <mat-icon class="material-icons-outlined icon-hover">message</mat-icon>
+      <mat-icon class="material-icons-outlined bell icon-hover"
+                [class.ringing]="isReceiveNewMessages"
                 (mouseenter)="onBellMouseEnter()"
       >notification_important</mat-icon>
-      <span class="count" [ngClass]="isHaveNewMessages ? 'bubble' : ''">3</span>
+      <span class="count" [class.bubble]="isHaveNewMessages">3</span>
     </div>
 
     <div class="mdc-layout-grid__cell--span-2">

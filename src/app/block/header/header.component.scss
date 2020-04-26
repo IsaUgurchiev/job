@@ -42,16 +42,6 @@
   justify-content: flex-start;
   position: relative;
 
-  mat-icon {
-    cursor: pointer;
-    padding: 10px;
-
-    &:hover {
-      background-color: $bg-color;
-      border-radius: 50%;
-    }
-  }
-
   mat-icon:first-child {
     margin-left: -20px;
   }
@@ -173,11 +163,11 @@
 
 .header-menu-overlay {
   .mat-menu-content {
-    background-color: $black;
+    background-color: $bg-color;
     width: 192px;
 
     button {
-      color: $white;
+      color: $black;
     }
   }
 }

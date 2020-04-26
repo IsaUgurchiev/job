@@ -1,14 +1,14 @@
 @import "../../../../css-variables";
 
 .mat-card {
-  border: 1px solid $bg-color;
+  border: 2px solid $bg-color;
   display: block;
   padding: 20px;
   border-radius: $small-radius;
   cursor: pointer;
 
   &:hover {
-    background-color: $bg-color;
+    border-color: $border-hover-color;
   }
 
   .mat-card-header {
@@ -27,7 +27,7 @@
     }
 
     .mat-card-header-text {
-      margin: 0 0 0 -10px;
+      margin: 0;
 
       .mat-card-title {
         margin-bottom: 12px;
@@ -47,9 +47,8 @@
     }
 
     .actions {
-      mat-icon:first-child {
-        margin-right: 5px;
-      }
+      margin-top: -10px;
+      margin-right: -10px;
     }
   }
 

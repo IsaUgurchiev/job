@@ -26,6 +26,11 @@
         padding-left: 8px;
       }
     }
+
+    .item.active {
+      background-color: $bg-color;
+      border-radius: $large-radius;
+    }
   }
 }
 
