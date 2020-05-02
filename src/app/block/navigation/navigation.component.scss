@@ -1,5 +1,10 @@
 @import "../../../css-variables";
 
+app-user {
+  margin-bottom: 10px;
+  outline: none;
+}
+
 .toolbar {
   background-color: transparent;
   font-size: $font-size;
@@ -31,6 +36,12 @@
       background-color: $bg-color-grey;
       border-radius: $large-radius;
     }
+  }
+}
+
+@media (max-width: 599px) {
+  app-user {
+    display: none;
   }
 }
 

@@ -1,0 +1,63 @@
+@import "../../../css-variables";
+
+:host {
+  display: flex;
+  cursor: pointer;
+
+  .user-pic {
+    width: 50px;
+    border-radius: 50%;
+
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .user-info {
+    font-size: 14px;
+    font-family: $font-family;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    overflow: hidden;
+
+    .user-name {
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .user-profession {
+      margin: 5px 0 0 0;
+      font-weight: 100;
+    }
+  }
+}
+
+:host(.flex-column) {
+  flex-flow: column;
+  align-items: center;
+
+  .user-pic {
+    margin-bottom: 10px;
+    width: 80px;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .user-info {
+    margin: 0;
+    text-align: center;
+
+    .user-name {
+
+    }
+
+    .user-profession {
+    }
+  }
+}
+
+

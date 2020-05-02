@@ -98,36 +98,6 @@
   .header-menu-container {
     display: flex;
     align-items: center;
-    cursor: pointer;
-
-    .user-pic {
-      width: 50px;
-      border-radius: 50%;
-
-      transition: transform 0.2s ease-out;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-
-    .user-info {
-      font-size: 14px;
-      font-family: $font-family;
-      letter-spacing: 1px;
-      margin-left: 15px;
-      overflow: hidden;
-
-      .user-name {
-        font-weight: 400;
-        margin: 0;
-      }
-
-      .user-profession {
-        margin: 5px 0 0 0;
-        font-weight: 100;
-      }
-    }
 
     i {
       border: solid darken($bg-color-grey, 50%);

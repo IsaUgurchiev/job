@@ -6,6 +6,7 @@ import { HeaderComponent } from '../../block/header/header.component';
 import { NavigationComponent } from '../../block/navigation/navigation.component';
 import { CvComponent } from './cv/cv.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
+import { UserComponent } from '../../block/user/user.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     CvComponent,
     HeaderComponent,
     NavigationComponent,
-    VacanciesComponent
+    VacanciesComponent,
+    UserComponent
   ],
   imports: [
     SharedModule

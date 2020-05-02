@@ -1,9 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 const LOGO_IMG = './assets/logo.png';
-const USER_PROFILE_IMG = './assets/user-pic.jpeg';
-const USER_NAME = 'Isa Ugurchiev';
-const USER_PROFESSION = 'Frontend Developer';
+
 
 @Component({
   selector: 'app-header',
@@ -17,9 +15,6 @@ export class HeaderComponent implements OnInit {
   isReceiveNewMessages = false;
 
   logoImg = LOGO_IMG;
-  userProfileImg = USER_PROFILE_IMG;
-  userName = USER_NAME;
-  userProfession = USER_PROFESSION;
 
   constructor() { }
 

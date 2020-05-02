@@ -22,11 +22,7 @@
 
       <div class="mdc-layout-grid__cell--span-2 mdc-layout-grid__cell--span-3-phone header-menu-control">
         <div class="header-menu-container" [matMenuTriggerFor]="menu" (menuOpened)="onMenuOpened()" (menuClosed)="onMenuClosed()">
-          <img class="user-pic" src="{{this.userProfileImg}}"/>
-          <div class="user-info">
-            <p class="user-name">{{this.userName}}</p>
-            <p class="user-profession">{{this.userProfession}}</p>
-          </div>
+          <app-user></app-user>
           <i [ngClass]="isMenuOpen ? 'arrow-up' : 'arrow-down'"></i>
         </div>
         <mat-menu class="header-menu-overlay" #menu="matMenu">
