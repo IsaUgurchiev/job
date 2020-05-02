@@ -4,3 +4,10 @@
   width: $container-width;
   padding: 0 $large-padding;
 }
+
+@media (max-width: 599px) {
+  .container {
+    width: inherit;
+    padding: inherit;
+  }
+}

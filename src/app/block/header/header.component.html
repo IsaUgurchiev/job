@@ -2,16 +2,16 @@
   <div class="mdc-layout-grid header">
     <div class="mdc-layout-grid__inner">
 
-      <div class="mdc-layout-grid__cell--span-3 logo">
+      <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--span-4-phone logo">
         <img src="./assets/logo.png" />
       </div>
 
-      <div class="mdc-layout-grid__cell--span-6 search">
+      <div class="mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-4-phone search">
         <input type="text" placeholder="Enter keyword">
         <mat-icon class="icon-search">search</mat-icon>
       </div>
 
-      <div class="mdc-layout-grid__cell--span-1 notification">
+      <div class="mdc-layout-grid__cell--span-1 mdc-layout-grid__cell--span-1-phone notification">
         <mat-icon class="material-icons-outlined icon-hover">message</mat-icon>
         <mat-icon class="material-icons-outlined bell icon-hover"
                   [class.ringing]="isReceiveNewMessages"
@@ -20,7 +20,7 @@
         <span class="count" [class.bubble]="isHaveNewMessages">3</span>
       </div>
 
-      <div class="mdc-layout-grid__cell--span-2">
+      <div class="mdc-layout-grid__cell--span-2 mdc-layout-grid__cell--span-3-phone profile-control">
         <div class="menu" [matMenuTriggerFor]="menu" (menuOpened)="onMenuOpened()" (menuClosed)="onMenuClosed()">
           <img class="user-pic" src="./assets/user-pic.jpeg"/>
           <div class="user-info">

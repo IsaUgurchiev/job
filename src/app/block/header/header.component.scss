@@ -2,12 +2,12 @@
 
 .header-wrapper {
   height: 122px;
+  border-bottom: 2px solid #f4f4f5;
 }
 
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid $bg-color-grey;
   position: fixed;
   z-index: 999;
   background-color: $bg-color-white;
@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   input {
     font-family: $font-family;
@@ -43,27 +44,17 @@
   }
 
   .icon-search {
-    position: relative;
+    position: absolute;
     right: 40px;
   }
 }
 
 .notification {
-  display: flex;
-  justify-content: flex-start;
   position: relative;
 
-  mat-icon:first-child {
-    margin-left: -20px;
-  }
-
-  mat-icon:not(:first-child) {
-    margin-left: 5px;
-  }
-
   .count {
-    top: 0;
-    right: 19px;
+    right: 4px;
+    position: absolute;
   }
 
   .ringing {
@@ -99,57 +90,65 @@
   }
 }
 
-.menu {
+.profile-control {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  cursor: pointer;
 
-  .user-pic {
-    width: 50px;
-    border-radius: 50%;
+  .menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
-    transition: transform 0.2s ease-out;
+    .user-pic {
+      width: 50px;
+      border-radius: 50%;
 
-    &:hover {
-      transform: scale(1.2);
+      transition: transform 0.2s ease-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .user-info {
+      font-size: 14px;
+      font-family: $font-family;
+      letter-spacing: 1px;
+      margin-left: 15px;
+      overflow: hidden;
+
+      .user-name {
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .user-profession {
+        margin: 5px 0 0 0;
+        font-weight: 100;
+      }
+    }
+
+    i {
+      border: solid darken($bg-color-grey, 50%);
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      transition: all 0.5s ease;
+    }
+
+    .arrow-down {
+      transform: rotate(45deg);
+    }
+
+    .arrow-up {
+      transform: rotate(-135deg);
     }
   }
 
-  .user-info {
-    font-size: 14px;
-    font-family: $font-family;
-    letter-spacing: 1px;
-    margin-left: 15px;
-    overflow: hidden;
-
-    .user-name {
-      font-weight: 400;
-      margin: 0;
-    }
-
-    .user-profession {
-      margin: 5px 0 0 0;
-      font-weight: 100;
-    }
-  }
-
-  i {
-    border: solid darken($bg-color-grey, 50%);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-left: 15px;
-
-    transition: all 0.5s ease;
-  }
-
-  .arrow-down {
-    transform: rotate(45deg);
-  }
-
-  .arrow-up {
-    transform: rotate(-135deg);
-  }
 }
 
 .header-menu-overlay {
@@ -159,6 +158,24 @@
 
     button {
       color: $black;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .header-wrapper {
+    height: inherit;
+  }
+
+  .header {
+    position: inherit;
+  }
+}
+
+@media (max-width: 599px) and (orientation: landscape) {
+  .notification {
+    .count {
+      right: 32px;
     }
   }
 }
