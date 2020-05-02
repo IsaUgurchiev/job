@@ -2,7 +2,6 @@
 
 .header-wrapper {
   height: 122px;
-  border-bottom: 2px solid #f4f4f5;
 }
 
 .header {
@@ -11,6 +10,7 @@
   position: fixed;
   z-index: 999;
   background-color: $bg-color-white;
+  border-bottom: 2px solid #f4f4f5;
 
   .mdc-layout-grid__inner {
     align-items: center;
@@ -90,12 +90,12 @@
   }
 }
 
-.profile-control {
+.header-menu-control {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
-  .menu {
+  .header-menu-container {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -148,7 +148,6 @@
       transform: rotate(-135deg);
     }
   }
-
 }
 
 .header-menu-overlay {
