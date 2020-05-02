@@ -30,8 +30,9 @@
           <i [ngClass]="isMenuOpen ? 'arrow-up' : 'arrow-down'"></i>
         </div>
         <mat-menu class="header-menu-overlay" #menu="matMenu">
-          <button mat-menu-item>Logout</button>
+          <button mat-menu-item routerLink="/profile/cv">View profile</button>
           <button mat-menu-item>Settings</button>
+          <button mat-menu-item>Logout</button>
         </mat-menu>
       </div>
 
