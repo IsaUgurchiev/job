@@ -10,7 +10,7 @@
   position: fixed;
   z-index: 999;
   background-color: $bg-color-white;
-  border-bottom: 2px solid #f4f4f5;
+  border-bottom: 2px solid $bg-color-grey;
 
   .mdc-layout-grid__inner {
     align-items: center;
