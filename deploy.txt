@@ -1,0 +1,2 @@
+ng build --prod --base-href "https://isaugurchiev.github.io/job/"
+ngh --dir dist/hh
