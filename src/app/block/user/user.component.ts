@@ -1,7 +1,7 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
 
-const USER_PROFILE_IMG = './assets/user-pic.jpeg';
-const USER_NAME = 'Isa Ugurchiev';
+const USER_PROFILE_IMG = './assets/profile1.jpg';
+const USER_NAME = 'John Adams';
 const USER_PROFESSION = 'Frontend Developer';
 
 @Component({

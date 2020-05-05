@@ -13,7 +13,7 @@ const profileRoutes: Routes = [
 
 
 const routes: Routes = [
-  {path: '', component: MainComponent},
+  {path: '',/* component: MainComponent,*/ redirectTo: 'profile', pathMatch: 'full'},
   {path: 'profile', component: ProfileComponent, children: profileRoutes}
 ];
 
