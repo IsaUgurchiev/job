@@ -1,0 +1,34 @@
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-7 mdc-layout-grid__cell--span-4-phone">
+    <form [formGroup]="cvForm" (ngSubmit)="onSubmit(cvForm.value)">
+      <h1>Edit</h1>
+      <section>
+        <div class="form-control">
+          <label for="firstName">First name <span>&#42;</span></label>
+          <input id="firstName" type="text" formControlName="firstName">
+          <div class="error" *ngIf="cvForm.controls['firstName'].invalid">
+            {{getErrorMessage('firstName', 'First name')}}
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="lastName">Last name <span>&#42;</span></label>
+          <input id="lastName" type="text" formControlName="lastName">
+          <div class="error" *ngIf="cvForm.controls['lastName'].invalid">
+            {{getErrorMessage('lastName', 'Last name')}}
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="lastName">Current Position <span>&#42;</span></label>
+          <input id="currentPosition" type="text" formControlName="currentPosition">
+          <div class="error" *ngIf="cvForm.controls['lastName'].invalid">
+            {{getErrorMessage('currentPosition', 'Current Position')}}
+          </div>
+        </div>
+
+
+      </section>
+    </form>
+  </div>
+</div>

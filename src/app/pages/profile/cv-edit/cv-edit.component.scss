@@ -1,0 +1,43 @@
+@import "../../../../css-variables";
+
+h1 {
+  font-weight: 300;
+}
+
+form {
+  .form-control {
+    margin-bottom: 24px;
+  }
+
+  .error {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: $red;
+  }
+
+  label, input {
+    display: block;
+    width: 100%;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input {
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border-radius: 1px;
+    border: 2px solid #bcc9d1;
+    outline: none;
+
+    &:focus {
+      border-color: $bg-color-dark-grey;
+    }
+  }
+
+}

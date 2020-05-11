@@ -7,6 +7,7 @@ import { NavigationComponent } from '../../block/navigation/navigation.component
 import { CvComponent } from './cv/cv.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { UserComponent } from '../../block/user/user.component';
+import { CvEditComponent } from './cv-edit/cv-edit.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserComponent } from '../../block/user/user.component';
     HeaderComponent,
     NavigationComponent,
     VacanciesComponent,
-    UserComponent
+    UserComponent,
+    CvEditComponent
   ],
   imports: [
     SharedModule
