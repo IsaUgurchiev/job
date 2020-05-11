@@ -14,7 +14,9 @@ export class CvEditComponent implements OnInit {
     this.cvForm = new FormGroup({
       firstName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z-]{2,}$')]),
       lastName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z-]{2,}$')]),
-      currentPosition: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z-]{2,}$')])
+      currentPosition: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z-]{2,}$')]),
+      country: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z-]{2,}$')]),
+      city: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z-]{2,}$')])
     });
   }
 
