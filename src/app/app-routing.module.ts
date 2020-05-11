@@ -13,8 +13,8 @@ const profileRoutes: Routes = [
 
 
 const routes: Routes = [
-  {path: '',/* component: MainComponent,*/ redirectTo: 'profile', pathMatch: 'full'},
-  {path: 'profile', component: ProfileComponent, children: profileRoutes}
+  {path: 'profile', component: ProfileComponent, children: profileRoutes},
+  {path: '',/* component: MainComponent,*/ redirectTo: 'profile', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -81,6 +81,11 @@ section {
       padding: 10px 20px;
       margin: 0 10px 10px 0;
       border-radius: $medium-radius;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bg-color-dark-grey;
+      }
     }
   }
 }
